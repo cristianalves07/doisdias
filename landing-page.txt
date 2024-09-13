@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3008.css">
+    <title>Escola DNC</title>
+</head>
+<body>
+
+                            <!--Menu Superior-->
+<div id="menu-superior">
+<a href="https://www.escoladnc.com.br/"> <LINK><img src="./imagens/logo.svg" id="logo"  alt="logotipo"> </LINK> </a>
+  
+<h1 id="titulo-menu-superior"> Dê os primeiros passos da <br> sua carreira em Tecnologia </h1>
+<p id="texto-menu-superior"> Inscreva-se no curso gratuito de Introdução à <br> Tecnologia 
+    da DNC School e aprenda os principais <br> fundamentos para 
+    construir experiências afetivas</p></div>
+
+                        <!--Menu Informacional-->
+<div id="menuinformacional">
+<p class="textoinformativo" > <img src="imagens/certificado.svg" class="icone" id="certificado" alt= "certificado"></p>
+<p class="textoinformativo">  <img src="imagens/horas.svg"               class="icone" id="horas"   alt="relógio"></p>
+<p class="textoinformativo">  <img src="imagens/Aulas.svg"               class="icone" id="aulas" alt="camera"></p></div>
+
+                            <!--Seção Vídeo-->
+<div id="secaovideo">
+    <iframe id="video"  width="502" height="283" src="https://www.youtube.com/embed/XEWmvxe3Qnk" title="24 de março de 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+    <h1 id="titulovideo"> <br> <br>
+    Aprenda com especialistas e <br>
+    comece seu primeiro projeto</h1>
+    
+<p id="textovideo" > Conheça o processo de desenvolvmento e entenda como utilizar <br>
+    os principais métodos e ferramentas da área para resolver<br>
+    problemas complexos<br> <br>
+    Conquiste seu certificado e desenvolva um projeto prático para <br>
+    aplicar seus conhecimentos</p></div> </div>
+
+                            <!--CARROCEL -->
+<div id="carrocel">
+<h1 id="titulo-carrocel"> Mais de 500 alunos já iniciaram seus estudos<h1></div>;
+    
+
+                        <!-- DIVISÂO DOS CARDS -->
+<div id="div-cards">
+<img id="setaesquerda" onclick="RolarParaEsquerda()"  class="seta" src="./imagens/setaesquerda.svg">
+<img id="Leonardo" class="card" src="./imagens/Leonardo.svg">
+<img id="Samantha" class="card" src="./imagens/Samantha.svg" >
+<img id="Bruna"    class="card" src="./imagens/Bruna.svg">
+<img id="setadireita" onclick="RolarParaDireita()"   class="seta" src="./imagens/setadireita.svg"> 
+
+</div>
+
+
+<!--FORMULÁRIO -->
+<div id="formulario">
+    <h1 id="titulo-formulario" > Comece agora mesmo e dê o próximo passo da sua carreira</h1></div>
+<form action="https://api.sheetmonkey.io/form/mHBQZzpb5PjE4xAmpsiUx5" method="POST">
+<input  type="text"  id="Nome"  placeholder="Nome" name="Name" required><br><br><br>
+<input type="email"  id="Email"    placeholder="Email" name="Email" required  ><br><br><br>
+<input type="number" id="Telefone" placeholder="Telefone" name="Phone" ><br><br><br>
+<input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+<button type="submit" id="botao" > Acesse a ementa grátis</button></form>
+<script src="3008.js" ></script>
+</body>
+</html>
+
+
+
+**********************
+
+*{
+ 
+font-family: "inter";
+ margin: 0px;}
+ 
+ #logo{
+margin-left: 50px;
+margin-top: 50px; }
+
+#titulo-menu-superior{
+margin-left: 150px;
+margin-top: 50px;
+display:grid;
+grid-auto-flow: column;
+columns: auto;}
+
+
+
+#texto-menu-superior{
+margin-left: 150px;
+margin-top: 35px;}
+
+#menu-superior{
+background-image: url(imagens/fundo.svg);
+color: aliceblue;}
+
+#menuinformacional{
+background-color: rgba(234, 236, 229, 1);
+display: grid;
+grid-auto-flow: column;
+columns: auto;}
+
+.icone{
+margin: 50px 0px 50px 100px;
+padding: 25px;}
+
+.textonformativo{
+display: flex;
+align-items: center;}
+
+
+#secaovideo{
+display:grid;
+grid-auto-flow: column;}
+
+#titulovideo{
+color:#70c1e4;
+margin: 10px 50px 50px 10px;}
+
+
+#video{ 
+margin: 50px 25px 50px 100px;}
+
+#carrocel{
+background-color: #247ba0;
+padding: 50px; 
+grid-auto-rows: colum;}
+
+#titulo-carrocel{
+color: beige;
+text-align: center;
+font-size: 32px;}
+
+
+#div-cards{
+margin-top: 25px;
+display: grid;
+grid-auto-flow: column;}
+
+.card{
+display: grid;
+grid-auto-flow: column;
+margin-left: 50px;}
+
+#setaesquerda{
+
+display: none;}
+
+#Bruna{
+
+display: none;}
+
+#seta{
+
+margin-top: 1%;
+cursor: pointer;}
+
+#seta:hover{
+transform: translateY(-7px);
+transition-duration: 1s;}
+
+#formulario{
+text-align: center;}
+
+#titulo-formulario{
+font-size: 25px;
+margin: 25px;
+color:#383838}
+
+#input{
+    
+width: 300px;
+height: 30px;
+background-color: #EAECE5;
+margin:15px;
+border: 0px;
+    }
+
+button{
+background-color: #247BA0;
+height: 40px;
+width: 250px;
+color: #EAECE5;
+border: 0px;
+border-radius: 5px;
+margin-bottom: 50px;
+margin-left: 510px;
+font-weight: bolder;
+cursor: pointer; 
+}
+
+button:hover{
+background-color: #318FB8;
+color: white; 
+transform: translate(-7px);
+box-shadow: 0px 15px 20px #13171a ;}
+
+#Nome{
+grid-auto-flow: column;
+margin-left: 550px;
+background-color: aqua;}
+
+#Email{
+background-color: chartreuse;
+margin-left: 550px;
+}
+
+#Telefone{
+background-color: chocolate;
+margin-left: 550px;
+}
+***********************************************
+
+var setadireita = window.document.getElementById("setadireita")
+var Leonardo = window.document.getElementById("Leonardo")
+var Samantha = window.document.getElementById("Samantha")
+var Bruna = window.document.getElementById("Bruna")
+var setaesquerda = window.document.getElementById("setaesquerda")
+
+
+
+function RolarParaDireita(){
+Leonardo.style ="display:none"
+Bruna.style ="display:flex"
+setadireita.style="display:none"
+setaesquerda.style="display:flex; margin-top:55px "}
+
+function RolarParaEsquerda(){
+    Leonardo.style ="display:flex"
+    Bruna.style ="display:none"
+    setadireita.style="display:none; margin-top:55px"}
+
+
+
+******************************************************
+
